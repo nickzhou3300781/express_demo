@@ -1,0 +1,26 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "multer": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon lib/express_demo.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel lib -d dist --presets es2015,stage-2",
+    "server": "node dist/express_demo.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
